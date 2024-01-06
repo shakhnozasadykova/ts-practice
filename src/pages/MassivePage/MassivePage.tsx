@@ -2,9 +2,9 @@ import React from "react";
 
 export const MassivePage = () => {
     let numbers: number[] = [1, 2, 3, 4, 5];
-    let names: string[] = ["Анна", "Борис", "Виктор", "Галина"];
+    let names: string[] = ["Тарантино", "Фон Триер", "Линч", "Кубрик"];
     let booleans: boolean[] = [true, false, true, false];
-    let cities: string[] = ["Москва", "Петербург", "Новосибирск", "Екатеринбург"];
+    let cities: string[] = ["Нью-Йорк", "Рим", "Лондон", "Париж"];
     let cars: string[] = ["Toyota", "Ford", "BMW", "Audi"];
     let fruits: string[] = ["Яблоко", "Банан", "Груша", "Апельсин"];
     let temperatures: number[] = [20, 22, 19, 25];

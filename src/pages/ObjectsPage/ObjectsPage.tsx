@@ -1,32 +1,135 @@
 import React from "react";
 
+interface Person {
+  name: string;
+  age: number;
+}
+
+interface Car {
+  brand: string;
+  model: string;
+  year: number;
+}
+
+interface Book {
+  title: string;
+  author: string;
+  isAvailable: boolean;
+}
+
+interface Job {
+    title: string;
+    company: string;
+}
+
+interface University {
+    name: string;
+    city: string;
+
+}
+
+interface Device {
+    type: string;
+    model: string;
+    brand: string;
+}
+  
+interface City {
+    name: string;
+    country: string;
+    population: number;
+}
+  
+interface Movie {
+    title: string;
+    director: string;
+    releaseYear: number;
+}
+  
+interface Course {
+    name: string;
+    fieldOfStudy: string;
+    durationInWeeks: number;
+}
+  
+interface Animal {
+    species: string;
+    name: string;
+    age: number;
+}
+
 export const ObjectsPage = () => {
-    let person = { name: "Иван", age: 25 };
-    let car = { brand: "Ford", model: "Focus", year: 2018 };
-    let book = { title: "Гарри Поттер", author: "Дж. К. Роулинг" };
-    let smartphone = { brand: "Samsung", model: "Galaxy S10" };
-    let computer = { brand: "Apple", model: "MacBook Pro" };
-    let country = { name: "Россия", capital: "Москва" };
-    let city = { name: "Санкт-Петербург", population: 5000000 };
-    let movie = { title: "Титаник", director: "Джеймс Кэмерон" };
-    let job = { title: "Программист", company: "Google" };
-    let university = { name: "МГУ", city: "Москва" };
-  
-    return (
-      <div>
-        <p>Человек: {person.name}, {person.age} лет</p>
-        <p>Автомобиль: {car.brand} {car.model}, {car.year} год выпуска</p>
-        <p>Книга: "{book.title}", автор {book.author}</p>
-        <p>Смартфон: {smartphone.brand} {smartphone.model}</p>
-        <p>Компьютер: {computer.brand} {computer.model}</p>
-        <p>Страна: {country.name}, столица {country.capital}</p>
-        <p>Город: {city.name}, население {city.population}</p>
-        <p>Фильм: "{movie.title}", режиссер {movie.director}</p>
-        <p>Работа: {job.title} в компании {job.company}</p>
-        <p>Университет: {university.name} в городе {university.city}</p>
-      </div>
-    );
+  const person: Person = {
+    name: "Shakhnoza",
+    age: 23
   };
-  
- 
-  
+
+  const car: Car = {
+    brand: "Porsche",
+    model: "Cayman",
+    year: 2018
+  };
+
+  const book: Book = {
+    title: "10 меченосцев",
+    author: "Эйдзи Ёсикава",
+    isAvailable: true
+  };
+
+  const job: Job = {
+    title: "Programmer",
+    company: "Google"
+  }
+
+  const university: University = {
+    name: "UWED",
+    city: "Tashkent"
+  }
+
+  const device: Device = {
+    type: "Smartphone",
+    model: "Galaxy S21",
+    brand: "Samsung"
+  };
+
+  const city: City = {
+    name: "Токио",
+    country: "Япония",
+    population: 13960000
+  };
+
+  const movie: Movie = {
+    title: "Властелин колец: Братство кольца",
+    director: "Питер Джексон",
+    releaseYear: 2001
+  };
+
+  const course: Course = {
+    name: "Введение в TypeScript",
+    fieldOfStudy: "Программирование",
+    durationInWeeks: 5
+  };
+
+  const animal: Animal = {
+    species: "Кошка",
+    name: "Мурка",
+    age: 3
+  };
+
+  return (
+    <div>
+      <p>Имя: {person.name}, возраст: {person.age}</p>
+      <p>Бренд Автомобиля: {car.brand}, Модель автомобиля: {car.model}, Год: {car.year}</p>
+      <p>Название книги: {book.title}, автор: {book.author} наличие: {book.isAvailable}</p>
+      <p>Работа: {job.title}, компания: {job.company}</p>
+      <p>Университет: {university.name}, город: {university.city}</p>
+      <p>Устройство: {device.brand} {device.model} ({device.type})</p>
+      <p>Город: {city.name}, {city.country}, население {city.population}</p>
+      <p>Фильм: "{movie.title}", режиссер {movie.director}, год выпуска {movie.releaseYear}</p>
+      <p>Курс: {course.name} по специальности {course.fieldOfStudy}, продолжительность {course.durationInWeeks} недель</p>
+      <p>Животное: {animal.species}, кличка {animal.name}, возраст {animal.age}</p>
+    </div>
+  );
+};
+
+
